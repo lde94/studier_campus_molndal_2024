@@ -2,8 +2,15 @@ package se.dsve;
 
 
 public class Main {
+
+
+
     public static void main(String[] args) {
+
+
         System.out.println("Main");
+
+
         //Car Part
         /*Car car1 = new Car();
         car1.startEngine();
@@ -55,10 +62,40 @@ public class Main {
         painter.paint(house);
         System.out.println(house.color + " " + house.adress);*/
 
+
         //Library part
-        Library lib = new Library();
+        /*Library lib = new Library();
         Book book = (lib.getBook("Lord of the Rings"));
         System.out.println(book.title);
+
+        book = lib.getBook("Yepper");
+        System.out.println(book.title);*/
+
+
+        //Person Part
+        /*Person person1 = new Person("Johnny", 23);
+        Person person2 = new Person("Jill", 27);
+        person1.sameInfo(person2);*/
+
+
+        //Bank Part
+       /* BankAccount account1 = new BankAccount(123321, 10000);
+        BankAccount account2 = new BankAccount(321123, 10000);
+
+        account1.info();
+        account2.info();
+
+        account1.transferFunds(account1, account2, 3000);
+
+        account1.info();
+        account2.info();*/
+
+
+        //Classroom Part
+        
+
+
+
 
 
 
