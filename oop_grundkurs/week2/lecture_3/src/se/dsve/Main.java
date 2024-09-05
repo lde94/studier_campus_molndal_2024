@@ -92,12 +92,14 @@ public class Main {
 
 
         //Classroom Part
-        Student student1 = new Student("John");
+       /* Student student1 = new Student("John");
         Classroom classroom = new Classroom();
 
         classroom.addStudent(student1);
-        classroom.printStudents();
+        classroom.printStudents();*/
 
+
+        
 
 
 

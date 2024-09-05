@@ -5,7 +5,7 @@ public class Classroom {
 
     public void addStudent(Student student) {
         students[students.length - 1] = student;
-        students.length
+        /*students.length*/
     }
 
     public void printStudents() {
