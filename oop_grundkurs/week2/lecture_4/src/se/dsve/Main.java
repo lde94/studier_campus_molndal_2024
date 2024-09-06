@@ -7,7 +7,9 @@ import sw.Podracer;
 import sw.Race;
 
 
+import java.awt.print.Book;
 import java.util.List;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -47,8 +49,37 @@ public class Main {
 
         /*recursion();*/
 
-        System.out.println(Helper.randomInt());
-        racing();
+        /*System.out.println(Helper.randomInt());
+        racing();*/
+
+
+        //Exercises
+        //Uppgift 1
+        /*useCalculator();*/
+
+        //Uppgift 3
+        /*Car car1 = new Car("Nissan", "Skyline", 2002);
+        Car car2 = new Car("Volvo", "740");
+        Car car3 = new Car();
+
+        car1.displayInfo();
+        car2.displayInfo();
+        car3.displayInfo();*/
+
+        //Uppgift 5
+        /*BookTest book = new BookTest("The Thing", "Stephen King", 200);
+        book.showInfo();
+        book.addDiscount(40);
+        book.showInfo();
+
+        BookTest bookTwo = new BookTest("Hobbit", "J R R Tolkien", 140);
+        bookTwo.showInfo();
+        bookTwo.addDiscount(25);
+        bookTwo.showInfo();*/
+
+
+
+
 
 
     }
@@ -130,5 +161,37 @@ public class Main {
         race.startRace();
 
     }
+
+    private static void useCalculator() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter the first number you wish to calculate: ");
+        double num1 = scanner.nextDouble();
+        System.out.print("Please enter the second number you wish to calculate: ");
+        double num2 = scanner.nextDouble();
+        System.out.print("Now please enter the operation between +, -, *, /: ");
+        String operation = scanner.next();
+
+        switch (operation) {
+            case "+":
+                System.out.print("Result: " + calculator.add(num1, num2));
+                break;
+            case "-":
+                System.out.print("Result: " + calculator.subtract(num1, num2));
+                break;
+            case "*":
+                System.out.print("Result: " + calculator.multiply(num1, num2));
+                break;
+            case "/":
+                System.out.print("Result: " + calculator.divide(num1, num2));
+                break;
+                default:
+                    System.out.println("Invalid operation");
+        }
+        scanner.close();
+    }
+
+
+
 }
 
